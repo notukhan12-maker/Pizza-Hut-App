@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOHI Restaurant</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css file -->
+    <link rel="stylesheet" href="piza.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <h2>
+            <i class="fa-solid fa-utensils" style="color: var(--primary-color);"></i>
+            SOHI
+        </h2>
+        <div class="menu-toggle" id="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="btn-primary open-booking">Book a Table</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="content">
+            <h1>Enjoy Our Delicious Meal</h1>
+            <p>We serve tasty food made with love. Come and experience a delightful dining atmosphere with us.</p>
+            <button class="btn-primary open-booking">Book a Table</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&auto=format&fit=crop&q=60" alt="Delicious Burger">
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <div id="cards-container">
+        <div class="card">
+            <i class="fa-solid fa-graduation-cap fa-2xl" style="color: var(--secondary-color);"></i>
+            <h2>Master Chef</h2>
+            <p>Our experienced chefs craft exceptional culinary experiences tailored to your palate.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-utensils fa-2xl" style="color: var(--secondary-color);"></i>
+            <h2>Quality Food</h2>
+            <p>We use fresh, locally sourced ingredients to prepare every meal with the highest quality standards.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-cart-shopping fa-2xl" style="color: var(--secondary-color);"></i>
+            <h2>Online Order</h2>
+            <p>Order your favorite meals easily through our streamlined digital ordering experience.</p>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-kitchen-set fa-2xl" style="color: var(--secondary-color);"></i>
+            <h2>24/7 Services</h2>
+            <p>Satisfy your late-night cravings anytime with our round-the-clock kitchen services.</p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-images">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&auto=format&fit=crop&q=60" alt="Tikka">
+            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&auto=format&fit=crop&q=60" alt="Burger">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop&q=60" alt="Pizza">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500&auto=format&fit=crop&q=60" alt="Sandwich">
+        </div>
+        <div class="about-content">
+            <h1>About Us</h1>
+            <h2>Welcome to My Restaurant <i class="fa-solid fa-utensils"></i></h2>
+            <p>We pride ourselves on providing memorable culinary experiences that blend traditional flavors with modern cuisine. Every dish is cooked fresh with authentic ingredients to bring a smile to your face.</p>
+            <div class="stats-parent">
+                <div>
+                    <h1>12</h1>
+                    <h3>Years Of Experience</h3>
+                </div>
+                <div>
+                    <h1>39</h1>
+                    <h3>Popular Chefs</h3>
+                </div>
+            </div>
+            <button class="btn-primary">Read More</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service">
+        <h1>Our Services</h1>
+        <div class="service-box-container">
+            <div class="service-card">
+                <i class="fa-solid fa-bowl-rice fa-2xl" style="color: var(--secondary-color);"></i>
+                <h2>Dine-In</h2>
+                <p>Enjoy a cozy and ambient dining environment suited for friends, family, and romantic evenings.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-bag-shopping fa-2xl" style="color: var(--secondary-color);"></i>
+                <h2>Takeaway</h2>
+                <p>Grab your favorite dishes to-go—fresh, quick, and packed perfectly for home.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-truck-fast fa-2xl" style="color: var(--secondary-color);"></i>
+                <h2>Delivery</h2>
+                <p>Hot, delicious food delivered straight to your doorstep within minutes.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-cake-candles fa-2xl" style="color: var(--secondary-color);"></i>
+                <h2>Event Catering</h2>
+                <p>Celebrate your special moments with customized catering menus for big and small gatherings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h1 class="section-title">Our Menu</h1>
+        <div class="menu-btns">
+            <button class="menu-filter-btn active" data-category="all">All Items</button>
+            <button class="menu-filter-btn" data-category="fastfood">Fast Food</button>
+            <button class="menu-filter-btn" data-category="chinese">Chinese</button>
+            <button class="menu-filter-btn" data-category="desifood">Desi Food</button>
+        </div>
+
+        <!-- Fast Food Block -->
+        <div class="menu-block" data-group="fastfood">
+            <h2 class="menu-category-title">Fast Food</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&auto=format&fit=crop&q=60" alt="Burger">
+                    <h2>Burger</h2>
+                    <p>Juicy beef patty topped with fresh lettuce and melted cheese.</p>
+                    <div class="price">Rs. 600 PKR</div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1664472757995-3260cd26e477?w=500&auto=format&fit=crop&q=60" alt="Sandwich">
+                    <h2>Sandwich</h2>
+                    <p>Toasted multi-grain bread with grilled chicken and mayo.</p>
+                    <div class="price">Rs. 500 PKR</div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&auto=format&fit=crop&q=60" alt="Pizza">
+                    <h2>Pizza</h2>
+                    <p>Loaded cheese pizza with pepperoni and fresh herbs.</p>
+                    <div class="price">Rs. 1500 PKR</div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&auto=format&fit=crop&q=60" alt="Tikka">
+                    <h2>Tikka</h2>
+                    <p>Charcoal grilled spiced chicken pieces served hot.</p>
+                    <div class="price">Rs. 3000 PKR</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chinese Block -->
+        <div class="menu-block" data-group="chinese">
+            <h2 class="menu-category-title">Chinese</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500&auto=format&fit=crop&q=60" alt="Noodles">
+                    <h2>Chinese Noodles</h2>
+                    <p>Stir-fried noodles cooked with vegetables and soy sauce.</p>
+                    <div class="price">Rs. 350 PKR</div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1600490114245-4978ed17bd8e?w=500&auto=format&fit=crop&q=60" alt="Manchurian">
+                    <h2>Chicken Manchurian</h2>
+                    <p>Spicy fried chicken chunks in a rich Chinese sauce.</p>
+                    <div class="price">Rs. 800 PKR</div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1653049525170-d062fd2c39e6?w=500&auto=format&fit=crop&q=60" alt="Ramen">
+                    <h2>Spicy Noodles</h2>
+                    <p>Authentic spicy broth served with hot noodles.</p>
+                    <div class="price">Rs. 500 PKR</div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://media.istockphoto.com/id/1366953086/photo/korean-dishes.webp?a=1&b=1&s=612x612&w=0&k=20&c=rK5tgyOnYTJKB2IGlhO1VZWEtt6xqr9gFgzsqmK2gN0=" alt="Kimchi">
+                    <h2>Kimchi</h2>
+                    <p>Traditional fermented seasoned cabbage dish.</p>
+                    <div class="price">Rs. 899 PKR</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desi Food Block -->
+        <div class="menu-block" data-group="desifood">
+            <h2 class="menu-category-title">Desi Food</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1710091692253-a31df7ba2a6d?w=500&auto=format&fit=crop&q=60" alt="Paya">
+                    <h2>Beef Paya</h2>
+                    <p>Slow-cooked rich beef trotters gravy cooked with spices.</p>
+                    <div class="price">Rs. 999 PKR</div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1559203244-78de52adba0e?w=500&auto=format&fit=crop&q=60" alt="Nihari">
+                    <h2>Mutton Nihari</h2>
+                    <p>Tender mutton shank stewed overnight in traditional spices.</p>
+                    <div class="price">Rs. 1800 PKR</div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://plus.unsplash.com/premium_photo-1723708871094-2c02cf5f5394?w=500&auto=format&fit=crop&q=60" alt="Karahi">
+                    <h2>Chicken Karahi</h2>
+                    <p>Chicken cooked in a wok with fresh tomatoes and ginger.</p>
+                    <div class="price">Rs. 2000 PKR</div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1673436977947-0787164a9abc?w=500&auto=format&fit=crop&q=60" alt="Grilled Fish">
+                    <h2>Grilled Fish</h2>
+                    <p>Freshly marinated fish grilled over open flames.</p>
+                    <div class="price">Rs. 1500 PKR</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-img">
+            <img src="https://images.unsplash.com/photo-1632203171982-cc0df6e9ceb4?w=500&auto=format&fit=crop&q=60" alt="Contact Us Image">
+        </div>
+        <div class="contact-form-container">
+            <h1><i class="fa-solid fa-address-book"></i> Contact Us</h1>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="First Name" required>
+                <input type="email" id="email" placeholder="Enter Your E-mail" required>
+                <textarea id="message" placeholder="Share your experience" rows="6" required></textarea>
+                <button type="submit" class="btn-primary">Submit Message</button>
+            </form>
+            
+            <div class="social-fonts">
+                <a href="mailto:notukhan@gmail.com?cc=admin@notu12.com"><i class="fa-solid fa-envelope"></i> Gmail</a>
+                <a href="tel:03479096212"><i class="fa-solid fa-phone"></i> 03479096212</a>
+                <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Reservation Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="color: var(--primary-color); margin-bottom: 20px;">Book a Table</h2>
+            <form id="bookingForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="number" placeholder="Number of Guests" min="1" max="20" required>
+                <input type="datetime-local" required>
+                <button type="submit" class="btn-primary">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+    <!-- js file -->
+    <script src="piza.js"></script>
+</body>
+</html>
